@@ -1,0 +1,135 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "./component/action";
+@import "./component/augmented";
+@import "./component/footer";
+@import "./component/slider";
+@import "./component/deep";
+@import "./component/meet";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2248e2;
+    --yellow: #ffc107;
+    --cyan: #17a2b8;
+    --dark-blue: #343a40;
+    --white: #fff;
+    --black: #000;
+    --blackRGBA: rgba(0, 0, 0, 0.159);
+}
+
+html,body {
+    font-size: 62.5%;
+}
+
+p, h6, span, a {
+    font-size: 1.4rem;
+}
+
+.btn {
+    font-size: 1.8rem;
+    padding: .7rem 1.4rem;
+}
+
+h1 {
+    font-size: 6.2rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.dlBtn {
+    max-width: 30rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.sub-container {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discover > div, .endless > div{
+    text-align: right;
+
+    img {
+        width: 25rem;
+    }
+}
+
+.titleWhite {
+    color: var(--white)
+}
+
+.titleBlack {
+    color: var(--black)
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: var(--blackRGBA)!important; 
+    box-shadow: .4px .4px .4px var(--blackRGBA);
+    padding: 1rem 0;
+    a {
+        font-weight: 500;
+        color: var(--black)!important;
+    }
+
+    &-brand img {
+        width: 6rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .action {
+        padding-bottom: 12rem;
+    }
+
+    .action img {
+        max-width: 8rem;
+    }
+
+    .discover img, .augmented img, .endless img  {
+        max-width: 20rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .navbar {
+        padding: 2rem 0;
+    }
+}

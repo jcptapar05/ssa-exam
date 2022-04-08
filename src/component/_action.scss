@@ -1,0 +1,43 @@
+.action {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 28rem;
+    
+    img {
+        margin-bottom: 2rem;
+    }
+
+    &__card {
+        max-width: 50rem;
+        display: flex;
+        
+        padding: 2.5rem;
+        border-radius: 1.2rem;
+        color: var(--white);
+
+        &-content {
+            text-align: left;
+            margin-left: 2rem;
+        }
+    }
+
+    .card-1 {background: var(--yellow);}
+    .card-2 {background: var(--cyan);}
+
+    &__card-btn {
+        text-decoration: none;
+        background: var(--blackRGBA);
+        padding: .6rem;
+        border-radius: 3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: var(--white)
+    }
+
+    .wave {
+        bottom: -2rem;
+        position: absolute;
+        right: 0;
+    }
+}

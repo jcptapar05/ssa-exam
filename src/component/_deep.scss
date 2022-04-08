@@ -1,0 +1,15 @@
+.deep {
+    background: var(--blue);
+    height: 36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .lines {
+        position: absolute;
+        top: -5rem;
+        right: 0;
+    }
+}

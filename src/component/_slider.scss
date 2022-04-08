@@ -1,0 +1,43 @@
+// ********************************* Slider/Hero ********************************* 
+.slider {
+    position: relative;
+    height: 95vh;
+
+    &__content {
+        position: absolute;
+        top: 30%;
+        max-width: 60rem;
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        img { 
+            z-index: 1;
+            width: 100%;
+        }
+    }
+
+    &__img-decals {
+        position: absolute;
+        top: 30rem;
+        left: -9rem;
+        width: 100%;
+        img { 
+            z-index: 1;
+            width: 100%;
+        }
+    }
+
+    &__btn-wrapper {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        border-top: 1px solid var(--blackRGBA);
+        border-bottom: 1px solid var(--blackRGBA);
+        padding-bottom: 1.2rem;
+    }
+}
